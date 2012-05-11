@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://labs.zacharydenton.com
+title: labs.zacharydenton
+subtitle: Web experiments.
+author: Zach Denton
 simple_search: http://google.com/search
-description:
+description: A repository of processing.js sketches, algorithmic music, and fractals.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -27,17 +27,17 @@ email:
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /
-permalink: /blog/:year/:month/:day/:title/
+permalink: /:title/
 source: source
 destination: public
 plugins: plugins
 code_dir: downloads/code
-category_dir: blog/categories
+category_dir: categories
 markdown: rdiscount
 pygments: false # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
-pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
+pagination_dir:       # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
