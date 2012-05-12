@@ -31,7 +31,7 @@ permalink: /:title/
 source: source
 destination: public
 plugins: plugins
-code_dir: downloads/code
+code_dir: src
 category_dir: categories
 markdown: rdiscount
 pygments: false # default python pygments have been replaced by pygments.rb
@@ -65,7 +65,7 @@ github_skip_forks: true
 
 # Twitter
 twitter_user: zacharydenton
-twitter_tweet_count: 4
+twitter_tweet_count: 5
 twitter_show_replies: false
 twitter_follow_button: false
 twitter_show_follower_count: false

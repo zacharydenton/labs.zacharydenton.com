@@ -1,3 +1,4 @@
+/* @pjs transparent="true"; */
 // This sketch builds on a prior work, "Rainbow Spirograph", created by Zach Denton
 // http://studio.sketchpad.cc/sp/pad/view/ro.9yHZDeii8N38l/rev.29
 
@@ -8,8 +9,8 @@ Particle[] particles = new Particle[num_particles];
 Planet planet;
 
 void setup() {
-  size(700, 700);
-  background(255);
+  size(940, 700);
+  background(0, 0);
   smooth();
   strokeWeight(2);
   for (int i=0; i< num_particles; i++) {

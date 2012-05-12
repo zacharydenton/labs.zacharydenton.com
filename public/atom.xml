@@ -4,7 +4,7 @@
   <title><![CDATA[labs.zd]]></title>
   <link href="http://labs.zacharydenton.com/atom.xml" rel="self"/>
   <link href="http://labs.zacharydenton.com/"/>
-  <updated>2012-05-12T00:45:16-04:00</updated>
+  <updated>2012-05-12T01:37:58-04:00</updated>
   <id>http://labs.zacharydenton.com/</id>
   <author>
     <name><![CDATA[Zach Denton]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Spirosketch]]></title>
+    <link href="http://labs.zacharydenton.com/spirosketch/"/>
+    <updated>2012-05-12T01:06:00-04:00</updated>
+    <id>http://labs.zacharydenton.com/spirosketch</id>
+    <content type="html"><![CDATA[<p><canvas data-processing-sources='/src/spirosketch/spirosketch.pde '></canvas></p>
+
+<h2>Description</h2>
+
+<p><em>Spirosketch</em> is like drawing with 30 colored pencils at the same
+time. The way it works is that there are around 30 colored particles
+&#8220;orbiting&#8221; your mouse &#8211; kind of like planets orbiting the sun.
+The trails they make can be quite interesting.</p>
+
+<h2>Tools Used</h2>
+
+<ul>
+<li><a href="http://processingjs.org/">Processing.js</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mandelbrot Set]]></title>
