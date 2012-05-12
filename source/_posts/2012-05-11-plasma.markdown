@@ -1,0 +1,18 @@
+---
+layout: processingjs
+title: "Plasma"
+date: 2012-05-11 16:26
+comments: true
+categories: 
+excerpt: |
+    A plasma effect made with processing.js.
+pde: /src/plasma/plasma.pde 
+image: /src/plasma/plasma.png 
+---
+## Description
+
+This is an example of a [plasma effect](https://en.wikipedia.org/wiki/Plasma_effect).
+
+## Tools Used
+
+* [Processing.js](http://processingjs.org/)

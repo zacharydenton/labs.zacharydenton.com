@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/*  
+Theme Name: Inspiration
+Description:   
+Version: 1
+Author: 
+Author URI: http://themeforest.net/user/MixerTheme
+*/
+
+/* ##############################################################
+						---	SHORTCODES ---
+##############################################################
+
+1. GLOBAL
+		Default Widgets
+		Custom Widgets
+2. IMAGES
+		Default Widgets
+			
+ */
+
+/* ========== GLOBAL ========== */
+
+pre {
+  font: normal 12px / 22px Arial, Helvetica, sans-serif;
+  color: #fff;
+  border: 1px solid #696968;
+  background: url(/images/pre_px_dark.gif) 0 0; }
+
+.code {
+  display: block;
+  font: normal 10px / 12px Arial, Helvetica, sans-serif;
+  margin-top: 10px; }
+
+/* ========== IMAGES ========== */
+/* ---- Search ---- */
+
+/* ========== TOGGLE ========== */
+
+b {
+  &.trigger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding: 5px 5px 5px 25px;
+    margin: 5px 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #999;
+    background: url(/images/expand_dark.png) 5px 6px no-repeat black;
+    border: 1px solid #555759;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url(js/PIE.htc); }
+  &:hover.trigger {
+    color: #fff;
+    border: 1px solid #fff;
+    background: url(/images/expand_dark.png) 5px 6px no-repeat black; }
+  &.trigger.active, &:hover.trigger.active {
+    color: #fff;
+    background: url(/images/collapse_dark.png) 5px 6px no-repeat #4c4c4d;
+    border: 1px solid #000; } }
+
+/*--When toggle is triggered, it will shift the image to the bottom to show its "opened" state--*/
+
+.toggle_container {
+  font-size: 11px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  position: relative; }
+
+/* ========== ACCORDION ========== */
+
+.acc_wrapper {
+  padding: 5px;
+  background: #4c4c4d;
+  border: 1px solid #000;
+  position: relative;
+  &.alignleft {
+    width: 300px;
+    margin: 0 20px 5px 0; }
+  &.alignright {
+    width: 300px;
+    margin: 0 0 5px 20px; } }
+
+b {
+  &.acc_trigger {
+    cursor: pointer;
+    display: block;
+    padding: 5px 5px 5px 25px;
+    margin: 5px 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #999;
+    background: url(/images/expand2_dark.png) 5px 6px no-repeat black;
+    border: 1px solid #555759;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url(js/PIE.htc); }
+  &:hover.acc_trigger {
+    color: #fff;
+    border: 1px solid #fff;
+    background: url(/images/expand2_dark.png) 5px 6px no-repeat black; }
+  &.acc_trigger.active, &:hover.acc_trigger.active {
+    color: #fff;
+    background: url(/images/collapse2_dark.png) 5px 6px no-repeat #4c4c4d;
+    border: 1px solid #000; } }
+
+.acc_container {
+  margin: 0 0 5px;
+  padding: 0;
+  overflow: hidden;
+  font-size: 12px;
+  color: #000;
+  background: #8c8b8b;
+  border: 1px solid #000;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  behavior: url(js/PIE.htc);
+  .block {
+    padding: 20px; } }
+
+/* ========== TABS ========== */
+
+ul.tabs {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  height: 32px;
+  /*--Set height of tabs--*/
+  border-bottom: 1px solid #dfe0e2;
+  border-left: 1px solid #dfe0e2;
+  width: 100%;
+  li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 31px;
+    /*--Subtract 1px from the height of the unordered list--*/
+    line-height: 31px;
+    /*--Vertically aligns the text within the tab--*/
+    border: 1px solid #dfe0e2;
+    border-left: none;
+    margin-bottom: -1px;
+    /*--Pull the list item down 1px--*/
+    overflow: hidden;
+    position: relative;
+    background: #4c4c4d;
+    font-weight: bold;
+    a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      font-size: 13px;
+      padding: 0 20px;
+      border: 1px solid #696968;
+      /*--Gives the bevel look with a 1px white border inside the list item--*/
+      outline: none;
+      &:hover {
+        background: #373738; } } } }
+
+html li.active {
+  /*--Makes sure that the active tab does not listen to the hover properties--*/
+  background: #8c8b8b;
+  border-bottom: 1px solid #8c8b8b;
+  /*--Makes the active tab look like it's connected with its content--*/
+  a:hover {
+    /*--Makes sure that the active tab does not listen to the hover properties--*/
+    background: #8c8b8b;
+    border-bottom: 1px solid #8c8b8b;
+    /*--Makes the active tab look like it's connected with its content--*/ } }
+
+.tab_container {
+  border: 1px solid #dfe0e2;
+  border-top: none;
+  overflow: hidden;
+  clear: both;
+  float: left;
+  width: 100%;
+  background: #8c8b8b;
+  color: #000;
+  margin-bottom: 20px; }
+
+.tab_content {
+  padding: 20px;
+  font-size: 12px; }

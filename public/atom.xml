@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[labs.zacharydenton]]></title>
+  <title><![CDATA[labs.zd]]></title>
   <link href="http://labs.zacharydenton.com/atom.xml" rel="self"/>
   <link href="http://labs.zacharydenton.com/"/>
-  <updated>2012-05-11T13:42:31-04:00</updated>
+  <updated>2012-05-12T00:23:51-04:00</updated>
   <id>http://labs.zacharydenton.com/</id>
   <author>
     <name><![CDATA[Zach Denton]]></name>
@@ -12,5 +12,74 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mandelbrot Set]]></title>
+    <link href="http://labs.zacharydenton.com/mandelbrot/"/>
+    <updated>2012-05-11T22:47:00-04:00</updated>
+    <id>http://labs.zacharydenton.com/mandelbrot</id>
+    <content type="html"><![CDATA[<h2>Description</h2>
+
+<p>A visualization of the Mandelbrot set written with processing.js.</p>
+
+<p>Left mouse button zooms in; right mouse button zooms out; middle
+mouse button resets the zoom.</p>
+
+<h2>Tools Used</h2>
+
+<ul>
+<li><a href="http://processingjs.org/">Processing.js</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Langton's Ant]]></title>
+    <link href="http://labs.zacharydenton.com/langtons-ant/"/>
+    <updated>2012-05-11T22:47:00-04:00</updated>
+    <id>http://labs.zacharydenton.com/langtons-ant</id>
+    <content type="html"><![CDATA[<h2>Description</h2>
+
+<p>Langton’s Ant is a 4-state two-dimensional Turing machine invented
+in the 1980s. The ant starts out on a grid containing black and
+white cells, and then proceeds according to the following set of
+rules:</p>
+
+<ol>
+<li>If the ant is on a black square, it turns right 90 degrees and
+moves forward one unit.</li>
+<li>If the ant is on a white square, it turns left 90 degrees and
+moves forward one unit.</li>
+<li>When the ant leaves a square, it inverts the color.</li>
+</ol>
+
+
+<h2>Tools Used</h2>
+
+<ul>
+<li><a href="http://processingjs.org/">Processing.js</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Plasma]]></title>
+    <link href="http://labs.zacharydenton.com/plasma/"/>
+    <updated>2012-05-11T16:26:00-04:00</updated>
+    <id>http://labs.zacharydenton.com/plasma</id>
+    <content type="html"><![CDATA[<h2>Description</h2>
+
+<p>This is an example of a <a href="https://en.wikipedia.org/wiki/Plasma_effect">plasma effect</a>.</p>
+
+<h2>Tools Used</h2>
+
+<ul>
+<li><a href="http://processingjs.org/">Processing.js</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
 </feed>

@@ -1,0 +1,30 @@
+<!-- Begin Header -->
+<div class="header_full sample_11">
+	<div class="head_top_shadow"></div>
+	<div class="head_bot_shadow"></div>
+	<div id="header">
+		<div class="SliderBg">
+			<!-- Begin Slider -->
+			<div class="slideContainer">
+				<ul class="accordion" id="accordion">
+					{% for post in site.posts limit:6 %}
+					<li style="background: url({{ post.image }}) -200px 0 no-repeat;">
+					<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+					<h2>{{ post.title }}</h2>
+					<div>
+						<h2>{{ post.title }}</h2>
+						{% if post.excerpt %}
+						<p>{{ post.excerpt | strip_html | condense_spaces | truncate:150 }}</p>
+						{% else %}
+						<p>{{ post.content | raw_content | strip_html | condense_spaces | truncate:150 }}</p>
+						{% endif %}
+					</div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<!-- End Slider -->
+		</div>
+	</div>
+</div>
+<!-- End Header -->

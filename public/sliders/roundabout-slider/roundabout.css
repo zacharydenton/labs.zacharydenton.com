@@ -1,0 +1,32 @@
+#main #header 		{min-height: 290px !important;}
+
+#roundabout			{
+					position:absolute;
+					left:50%;
+					margin-left:-580px;
+					width:1160px;
+					height:380px;
+					margin-bottom: 20px;
+					overflow:hidden;
+					}
+
+.roundabout-holder	{
+					width:960px;
+					height:280px;
+					margin:50px auto;
+					padding:0;
+					list-style:none;
+					}
+
+.roundabout-moveable-item {
+					width:320px;
+					height:240px;
+					display:block;
+					overflow:hidden;
+					padding:27px 0 0 0;
+					border:1px solid #9C9B9C;
+					background:url(../../images/roundabout/round_slide_bg.png) 0 0 no-repeat;
+					box-shadow:0 0 5px rgba(0, 0, 0, 0.4);
+					-moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.4);
+					-webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.4);
+					}

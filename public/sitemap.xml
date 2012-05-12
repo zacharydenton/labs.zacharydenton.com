@@ -1,11 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://labs.zacharydenton.com/</loc>
-        <lastmod>2012-05-11T13:18:45-04:00</lastmod>
+        <loc>http://labs.zacharydenton.com/plasma/</loc>
+        <lastmod>2012-05-12T00:23:13-04:00</lastmod>
     </url>
     <url>
-        <loc>http://labs.zacharydenton.com/blog/archives/</loc>
-        <lastmod>2012-05-11T13:18:45-04:00</lastmod>
+        <loc>http://labs.zacharydenton.com/langtons-ant/</loc>
+        <lastmod>2012-05-12T00:23:13-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://labs.zacharydenton.com/mandelbrot/</loc>
+        <lastmod>2012-05-12T00:23:13-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://labs.zacharydenton.com/</loc>
+        <lastmod>2012-05-12T00:23:13-04:00</lastmod>
     </url>
 </urlset>

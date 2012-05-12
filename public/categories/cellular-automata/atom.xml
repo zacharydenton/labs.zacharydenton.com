@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cellular-automata | labs.zd]]></title>
+  <link href="http://labs.zacharydenton.com/categories/cellular-automata/atom.xml" rel="self"/>
+  <link href="http://labs.zacharydenton.com/"/>
+  <updated>2012-05-12T00:23:51-04:00</updated>
+  <id>http://labs.zacharydenton.com/</id>
+  <author>
+    <name><![CDATA[Zach Denton]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Langton's Ant]]></title>
+    <link href="http://labs.zacharydenton.com/langtons-ant/"/>
+    <updated>2012-05-11T22:47:00-04:00</updated>
+    <id>http://labs.zacharydenton.com/langtons-ant</id>
+    <content type="html"><![CDATA[<h2>Description</h2>
+
+<p>Langton’s Ant is a 4-state two-dimensional Turing machine invented
+in the 1980s. The ant starts out on a grid containing black and
+white cells, and then proceeds according to the following set of
+rules:</p>
+
+<ol>
+<li>If the ant is on a black square, it turns right 90 degrees and
+moves forward one unit.</li>
+<li>If the ant is on a white square, it turns left 90 degrees and
+moves forward one unit.</li>
+<li>When the ant leaves a square, it inverts the color.</li>
+</ol>
+
+
+<h2>Tools Used</h2>
+
+<ul>
+<li><a href="http://processingjs.org/">Processing.js</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: fractals | labs.zd]]></title>
+  <link href="http://labs.zacharydenton.com/categories/fractals/atom.xml" rel="self"/>
+  <link href="http://labs.zacharydenton.com/"/>
+  <updated>2012-05-12T00:23:51-04:00</updated>
+  <id>http://labs.zacharydenton.com/</id>
+  <author>
+    <name><![CDATA[Zach Denton]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mandelbrot Set]]></title>
+    <link href="http://labs.zacharydenton.com/mandelbrot/"/>
+    <updated>2012-05-11T22:47:00-04:00</updated>
+    <id>http://labs.zacharydenton.com/mandelbrot</id>
+    <content type="html"><![CDATA[<h2>Description</h2>
+
+<p>A visualization of the Mandelbrot set written with processing.js.</p>
+
+<p>Left mouse button zooms in; right mouse button zooms out; middle
+mouse button resets the zoom.</p>
+
+<h2>Tools Used</h2>
+
+<ul>
+<li><a href="http://processingjs.org/">Processing.js</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

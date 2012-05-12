@@ -1,0 +1,29 @@
+---
+layout: base
+---
+<!-- Begin Header -->
+<div class="header_full sample_11">
+	<div class="head_top_shadow"></div>
+	<div class="head_bot_shadow"></div>
+	<div id="header">
+		<div class="SliderBg">
+			<!-- Begin Slider -->
+			<div class="slideContainer">
+				<canvas data-processing-sources="{{ page.pde }}"></canvas>
+			</div>
+			<!-- End Slider -->
+		</div>
+	</div>
+</div>
+<!-- End Header -->
+<!-- Start Content Wrapper -->
+<div class="content_wrapper">
+	<!-- Content Area -->
+	<div id="content">
+		{% if page.title %}
+		<h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+		{% endif %}
+		{{ content | expand_urls: root_url }}
+	</div>
+</div>
+<!-- End Content Wrapper -->

@@ -1,0 +1,191 @@
+/*
+ * jQuery Nivo Slider v2.0
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2010, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+ 
+ 
+/* The Nivo Slider styles */
+
+.nivoSlider,
+#nivo-slider	{
+				position:relative;
+				width:952px;
+				height:392px;
+				overflow:hidden;
+				margin:0 auto;
+				background:url(../../images/preloader.gif) 50% 50% no-repeat #fff;
+				}
+
+.nivoSlider img {
+				width:952px;
+				height:392px;
+				position:absolute;
+				display:none;
+				top:0;
+				left:0;
+				}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+				position:absolute;
+				top:0px;
+				left:0px;
+				width:952px;
+				height:392px;
+				border:0;
+				padding:0;
+				margin:0;
+				z-index:60;
+				display:none;
+				}
+/* The slices in the Slider */
+.nivo-slice 	{
+				display:block;
+				position:absolute;
+				z-index:50;
+				height:100%;
+				}
+/* Caption styles */
+.nivo-caption	{
+				position:absolute;
+				right:10px;
+				bottom:10px;
+				background:#000;
+				color:#fff;
+				filter:alpha(opacity=60);
+				-moz-opacity:0.6;
+				-khtml-opacity: 0.6;
+				opacity: 0.6;
+				width:300px;
+				z-index:89;
+				border-radius:4px;
+				-moz-border-radius:4px;
+				-khtml-border-radius:4px;
+				-webkit-border-radius:4px;
+				}
+
+.nivo-caption p {
+				padding:0;
+				margin:10px;
+				overflow:hidden;
+				height:4.3em;
+				}
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+				position:absolute;
+				top:45%;
+				z-index:99;
+				cursor:pointer;
+				}
+
+a.nivo-prevNav {
+				width:53px;
+				height:60px;
+				text-indent:-9999px;
+				left:10px;
+				}
+
+a.nivo-nextNav {
+				width:53px;
+				height:60px;
+				text-indent:-9999px;
+				right:10px;
+				}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+				width:160px;
+				position:absolute;
+				bottom:0px;
+				left:50% !important;
+				background:#fff;
+				margin-left:-92px !important;
+				padding:7px 0 0 10px;
+				z-index:100;
+				border-radius:4px 4px 0 0;
+				-moz-border-radius:4px 4px 0 0;
+				-khtml-border-radius:4px 4px 0 0;
+				-webkit-border-top-left-radius:4px;
+				-webkit-border-top-right-radius:4px;
+				
+				}
+
+.nivo-controlNav a {
+				width:16px;
+				height:15px;
+				display:block;
+				text-indent:-9999px;
+				margin-right:10px;
+				float:left;
+				position:relative;
+				z-index:99;
+				cursor:pointer;
+				}
+				
+.nav-thumbs {
+	position:absolute;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 1000;
+	bottom: 0px;
+	background: transparent url('../../images/000_70.png') repeat;
+	border-radius:0;
+	-moz-border-radius:0;
+	-khtml-border-radius:0;
+	-webkit-border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+}
+
+.nav-thumbs a {
+	cursor: pointer;
+	position: relative;
+	margin: 0px 5px;
+	padding: 0px;
+	display: inline;
+}
+
+.nav-thumbs a, .nav-thumbs a.active {
+	background: none;
+}
+
+.nivo-controlNav a img {
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+}
+
+.nivo-controlNav a.active img,
+.nivo-controlNav a:hover img {
+	filter:alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+.nav-thumbs {
+	padding: 7px 0px 2px;
+	display: none;
+}
+				
+/* ---- Nivo Slider ---- */
+
+a.nivo-prevNav {background:url(../../images/nav_left.png) 0 0 no-repeat;}
+a:hover.nivo-prevNav {background:url(../../images/nav_left.png) 0 -60px no-repeat;}
+
+a.nivo-nextNav	{background:url(../../images/nav_right.png) 0 0 no-repeat;}
+a:hover.nivo-nextNav {background:url(../../images/nav_right.png) 0 -60px no-repeat;}
+
+.nivo-controlNav a {background:url(../../images/bullets.png) -20px 0 no-repeat;}
+.nivo-controlNav a.active {background:url(../../images/bullets.png) 0 0 no-repeat;}

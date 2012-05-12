@@ -1,0 +1,141 @@
+/*
+	Coin Slider jQuery plugin CSS styles
+	http://workshop.rs/projects/coin-slider
+*/
+
+.coin-slider	{
+				position:relative;
+				width:952px;
+				height:392px;
+				margin:0 auto;
+				background:url(../../images/loader.gif) 50% 50% no-repeat;
+				}
+				
+#coin-slider	{position:relative;z-index:99;}
+				
+#coin-slider img	{
+				position:absolute;
+				top:0;
+				left:0;
+				}
+
+.coin-slider a	{
+				text-decoration: none;
+				outline: none;
+				border: none;
+				}
+
+#cs-title-coin-slider {
+				position:absolute;
+				opacity: 0.8 !important;
+				background:#000;
+				color:#fff;
+				width:300px;
+				z-index:89;
+				bottom:10px !important;
+				left:10px !important;
+				padding: 10px;
+				border-radius:4px;
+				-moz-border-radius:4px;
+				-khtml-border-radius:4px;
+				-webkit-border-radius:4px;
+				}
+
+#cs-title-coin-slider.top-left {
+				left:10px;
+				top:10px;
+				}
+
+#cs-title-coin-slider.top-right {
+				right:10px;
+				top:10px;
+				}
+
+#cs-title-coin-slider.bottom-right {
+				right:10px;
+				bottom:10px;
+				}
+
+#cs-title-coin-slider.bottom-left {
+				left:10px;
+				bottom:10px;
+				}
+
+#cs-title-coin-slider h3  {
+				color: #fff;
+				}
+
+/* Direction nav styles (e.g. Next & Prev) */
+.cs-navigation-coin-slider {
+				position:absolute;
+				top:45%;
+				z-index:99;
+				cursor:pointer;
+				}
+
+a.cs-prev		{
+				width:53px;
+				height:60px;
+				text-indent:-9999px;
+				left: 10px !important;
+				z-index: 100;
+				position: absolute;
+				*display:none;
+				display:none\0/;
+				}
+
+a.cs-next 		{
+				width:53px;
+				height:60px;
+				text-indent:-9999px;
+				right:10px !important;
+				z-index: 100;
+				position: absolute;
+				*display:none;
+				display:none\0/;
+				}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.cs-buttons 	{
+				position:absolute !important;
+				bottom:0px;
+				left:50% !important;
+				background:#fff;
+				padding:7px 0 0 10px;
+				z-index:100;
+				border-radius:4px 4px 0 0;
+				-moz-border-radius:4px 4px 0 0;
+				-khtml-border-radius:4px 4px 0 0;
+				-webkit-border-top-left-radius:4px;
+				-webkit-border-top-right-radius:4px;
+				}
+
+.cs-buttons a 	{
+				width:16px;
+				height:15px;
+				display:block;
+				text-indent:-9999px;
+				margin-right:10px;
+				float:left;
+				position:relative;
+				z-index:99;
+				cursor:pointer;
+				}
+				
+/* ---- Coin Slider ---- */
+
+a.cs-prev 		{background:url(../../images/nav_left.png) 0 0 no-repeat;}
+a:hover.cs-prev {background:url(../../images/nav_left.png) 0 -60px no-repeat;}
+
+a.cs-next		{background:url(../../images/nav_right.png) 0 0 no-repeat;}
+a:hover.cs-next {background:url(../../images/nav_right.png) 0 -60px no-repeat;}
+
+.cs-buttons a	{background:url(../../images/bullets.png) -20px 0 no-repeat;}
+a.cs-active 	{background:url(../../images/bullets.png) 0 0 no-repeat;}
+
+/*.cs-link-coin-slider {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+}*/
