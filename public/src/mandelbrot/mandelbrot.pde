@@ -1,5 +1,6 @@
 double min_real, max_real, min_imag, max_imag, real_factor, imag_factor;
 int iterations = 100;
+int current_max;
 double zoom_factor = 2;
 double bailout = 32;
 color bg = color(0);
@@ -22,7 +23,7 @@ void draw() {
     for (int y=0; y < height; y++) {
       int i = mandelbrot[y*width+x];
       if (i > 0) {
-        pixels[y*width+x] = color((t + (float(i) / iterations) * 360) % 360, 255, 255);
+        pixels[y*width+x] = color((t + (float(i) / current_max) * 360) % 360, 255, 255);
       }
     }
   }
@@ -31,6 +32,7 @@ void draw() {
 }
 
 void recalc() {
+  current_max = 1;
   for (int x=0; x < width; x++) {
     double c_real = min_real + x * real_factor;
     for (int y=0; y < height; y++) {
@@ -50,6 +52,8 @@ void recalc() {
       }
       if (escaped) {
         mandelbrot[y*width+x] = i;
+        if (i > current_max)
+          current_max = i;
       }
     }
   }
