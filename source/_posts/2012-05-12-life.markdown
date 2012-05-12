@@ -1,0 +1,21 @@
+---
+layout: default
+title: "Life"
+date: 2012-05-12 01:47
+comments: true
+image: /src/life/life.png
+excerpt: |
+    Conway's Game of Life, in processing.js.
+categories: 
+---
+{% processingjs /src/life/life.pde %}
+
+## Description
+
+This is [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) in processing.js.
+
+The left mouse button toggles cells. The right mouse button starts the simulation. The middle mouse button clears the grid.
+
+## Tools Used
+
+* [Processing.js](http://processingjs.org/)

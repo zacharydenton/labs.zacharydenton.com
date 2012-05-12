@@ -4,7 +4,7 @@
   <title><![CDATA[labs.zd]]></title>
   <link href="http://labs.zacharydenton.com/atom.xml" rel="self"/>
   <link href="http://labs.zacharydenton.com/"/>
-  <updated>2012-05-12T01:37:58-04:00</updated>
+  <updated>2012-05-12T02:02:56-04:00</updated>
   <id>http://labs.zacharydenton.com/</id>
   <author>
     <name><![CDATA[Zach Denton]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Life]]></title>
+    <link href="http://labs.zacharydenton.com/life/"/>
+    <updated>2012-05-12T01:47:00-04:00</updated>
+    <id>http://labs.zacharydenton.com/life</id>
+    <content type="html"><![CDATA[<p><canvas data-processing-sources='/src/life/life.pde '></canvas></p>
+
+<h2>Description</h2>
+
+<p>This is <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway&#8217;s Game of Life</a> in processing.js.</p>
+
+<p>The left mouse button toggles cells. The right mouse button starts the simulation. The middle mouse button clears the grid.</p>
+
+<h2>Tools Used</h2>
+
+<ul>
+<li><a href="http://processingjs.org/">Processing.js</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Spirosketch]]></title>
