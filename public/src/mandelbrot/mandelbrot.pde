@@ -96,6 +96,7 @@ void mousePressed() {
 void keyPressed() {
   if (key == ' ') {
     iterations *= 2;
+    bailout *= 2;
     recalc();
   }
 }
