@@ -1,5 +1,5 @@
 double min_real, max_real, min_imag, max_imag, real_factor, imag_factor;
-int iterations = 100;
+int iterations = 200;
 int current_max;
 double zoom_factor = 2;
 double bailout = 32;
@@ -7,11 +7,16 @@ color bg = color(0);
 int t = 0;
 
 int[] mandelbrot;
+color palette[];
 
 void setup() {
   size(952, 392);
   set_bounds(-3.5, 2.1, -1.15);
   colorMode(HSB);
+  palette = new color[256];
+  for (int i = 0; i < 256; i++) {
+    palette[i] = color(i, 255, 255);
+  }
   mandelbrot = new int[width*height];
   recalc();
 }
@@ -19,13 +24,9 @@ void setup() {
 void draw() {
   background(bg);
   loadPixels();
-  for (int x=0; x < width; x++) {
-    for (int y=0; y < height; y++) {
-      int i = mandelbrot[y*width+x];
-      if (i > 0) {
-        pixels[y*width+x] = color((t + (float(i) / current_max) * 360) % 360, 255, 255);
-      }
-    }
+  for (int i = 0; i < mandelbrot.length; i++) {
+    if (mandelbrot[i] > 0)
+      pixels[i] = palette[(mandelbrot[i] + t) % 256];
   }
   updatePixels();
   t++;

@@ -33,6 +33,7 @@ destination: public
 plugins: plugins
 code_dir: src
 category_dir: categories
+image_dir: images
 markdown: rdiscount
 pygments: false # default python pygments have been replaced by pygments.rb
 

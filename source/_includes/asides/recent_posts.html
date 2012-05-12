@@ -3,7 +3,7 @@
 	<ul>
 		{% for post in site.posts limit: site.recent_posts %}
 		<li>
-		<a href="{{ root_url }}{{ post.url }}" class="thumb"><img src="{{ post.image }}" alt="{{ post.title }}" width="72" height="48" border="0" /></a>
+		<a href="{{ root_url }}{{ post.url }}" class="thumb"><img src="{{post.image}}" width="72" height="48" /></a>
 		<h4><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h4>
 		{% if post.excerpt %}
 		<p>{{ post.excerpt | strip_html | condense_spaces | truncate:150 }}</p>
