@@ -1,10 +1,17 @@
-<section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    {% for post in site.posts limit: site.recent_posts %}
-      <li class="post">
-        <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+<div class="widget-container widget_recent_posts">
+	<h3>Latest Experiments</h3>
+	<ul>
+		{% for post in site.posts limit: site.recent_posts %}
+		<li>
+		<a href="{{ root_url }}{{ post.url }}" class="thumb"><img src="{{ post.image }}" alt="{{ post.title }}" width="72" height="48" border="0" /></a>
+		<h4><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h4>
+		{% if post.excerpt %}
+		<p>{{ post.excerpt | strip_html | condense_spaces | truncate:150 }}</p>
+		{% else %}
+		<p>{{ post.content | raw_content | strip_html | condense_spaces | truncate:150 }}</p>
+		{% endif %}
+		<div class="clear"></div>
+		</li>
+		{% endfor %}
+	</ul>
+</div>

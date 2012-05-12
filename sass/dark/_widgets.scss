@@ -249,6 +249,17 @@ Author URI: http://themeforest.net/user/MixerTheme
 
 /* ========== FOOTER SIDEBAR ========== */
 
+#tweets a[href*="status"]:hover {
+	text-decoration: none;
+}
+#tweets a[href*="status"] {
+	float: right;
+	padding: 0 0 .1em 1em;
+	position: relative;
+	font-size: .7em;
+	text-decoration: none;
+}
+
 #fsb {
   h3 {
     color: #dadada; }
@@ -272,7 +283,7 @@ Author URI: http://themeforest.net/user/MixerTheme
       list-style: none; } }
   .widget_recent_posts, .widget_text {
     width: 280px; }
-  .widget_recent_posts {
+  .widget_recent_posts, .widget_recent_tweets {
 	h4 {
 	  margin: 0;
 	  -webkit-text-fill-color: white;

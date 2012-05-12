@@ -1,24 +1,6 @@
 <!-- Start Footer Sidebar -->
 <div class="fsb_full">	
 	<div id="fsb">
-		<!-- Start First Collumn -->
-		<div class="widget-container widget_recent_posts" data-place="2">
-			<h3>Latest Experiments</h3>
-			<ul>
-				{% for post in site.posts limit:3 %}
-				<li>
-				<a href="{{ post.url }}" class="thumb"><img src="{{ post.image }}" alt="{{ post.title }}" width="72" height="48" border="0" /></a>
-				<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-				{% if post.excerpt %}
-				<p>{{ post.excerpt | strip_html | condense_spaces | truncate:150 }}</p>
-				{% else %}
-				<p>{{ post.content | raw_content | strip_html | condense_spaces | truncate:150 }}</p>
-				{% endif %}
-				<div class="clear"></div>
-				</li>
-				{% endfor %}
-			</ul>
-		</div>
 		{% include_array default_asides %}
 		<div class="clear"></div>
 	</div>
