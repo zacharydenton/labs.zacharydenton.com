@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fractals | labs.zd]]></title>
   <link href="http://labs.zacharydenton.com/categories/fractals/atom.xml" rel="self"/>
   <link href="http://labs.zacharydenton.com/"/>
-  <updated>2012-05-12T19:00:43-04:00</updated>
+  <updated>2012-05-13T17:56:38-04:00</updated>
   <id>http://labs.zacharydenton.com/</id>
   <author>
     <name><![CDATA[Zach Denton]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Distance Field Raymarcher]]></title>
+    <link href="http://labs.zacharydenton.com/distance-field-raymarcher/"/>
+    <updated>2012-05-13T17:35:00-04:00</updated>
+    <id>http://labs.zacharydenton.com/distance-field-raymarcher</id>
+    <content type="html"><![CDATA[<h2>Description</h2>
+
+<p>This is an implementation of a raymarcher in processing.js. I'm using it here to render 3-dimensional fractals defined by distance field functions. Depending on the speed of your computer, this may take a while to render.</p>
+
+<h2>Tools Used</h2>
+
+<ul>
+<li><a href="http://processingjs.org/">Processing.js</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mandelbrot Set]]></title>
