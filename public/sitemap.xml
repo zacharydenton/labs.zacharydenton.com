@@ -2,34 +2,38 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://labs.zacharydenton.com/plasma/</loc>
-        <lastmod>2012-05-13T17:55:36-04:00</lastmod>
+        <lastmod>2012-05-13T19:44:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://labs.zacharydenton.com/langtons-ant/</loc>
-        <lastmod>2012-05-13T17:55:36-04:00</lastmod>
+        <lastmod>2012-05-13T19:44:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://labs.zacharydenton.com/mandelbrot/</loc>
-        <lastmod>2012-05-13T17:55:36-04:00</lastmod>
+        <lastmod>2012-05-13T19:44:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://labs.zacharydenton.com/spirosketch/</loc>
-        <lastmod>2012-05-13T17:55:36-04:00</lastmod>
+        <lastmod>2012-05-13T19:44:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://labs.zacharydenton.com/life/</loc>
-        <lastmod>2012-05-13T17:55:36-04:00</lastmod>
+        <lastmod>2012-05-13T19:44:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://labs.zacharydenton.com/distance-field-raymarcher/</loc>
-        <lastmod>2012-05-13T17:55:36-04:00</lastmod>
+        <lastmod>2012-05-13T19:44:31-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://labs.zacharydenton.com/webgl-fractals/</loc>
+        <lastmod>2012-05-13T22:54:33-04:00</lastmod>
     </url>
     <url>
         <loc>http://labs.zacharydenton.com/</loc>
-        <lastmod>2012-05-13T17:55:36-04:00</lastmod>
+        <lastmod>2012-05-13T19:44:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://labs.zacharydenton.com/</loc>
-        <lastmod>2012-05-13T17:55:36-04:00</lastmod>
+        <lastmod>2012-05-13T22:54:33-04:00</lastmod>
     </url>
 </urlset>

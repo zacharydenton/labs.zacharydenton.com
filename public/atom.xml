@@ -4,7 +4,7 @@
   <title><![CDATA[labs.zd]]></title>
   <link href="http://labs.zacharydenton.com/atom.xml" rel="self"/>
   <link href="http://labs.zacharydenton.com/"/>
-  <updated>2012-05-13T17:56:38-04:00</updated>
+  <updated>2012-05-13T22:54:34-04:00</updated>
   <id>http://labs.zacharydenton.com/</id>
   <author>
     <name><![CDATA[Zach Denton]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[WebGL Fractals]]></title>
+    <link href="http://labs.zacharydenton.com/webgl-fractals/"/>
+    <updated>2012-05-13T19:45:00-04:00</updated>
+    <id>http://labs.zacharydenton.com/webgl-fractals</id>
+    <content type="html"><![CDATA[<div id="container"></div>
+
+<!-- Shaders -->
+<script id="per-fragment-lighting-vs" type="x-shader/x-vertex">
+	attribute vec3 aVertexPosition;
+	attribute vec3 aVertexNormal;
+	attribute vec2 aTextureCoord;
+
+	uniform mat4 uMVMatrix;
+	uniform mat4 uPMatrix;
+	uniform mat3 uNMatrix;
+
+	varying vec2 vTextureCoord;
+	varying vec3 vTransformedNormal;
+	varying vec4 vPosition;
+
+	void main(void) {
+		vPosition = uMVMatrix * vec4(aVertexPosition, 1.0);
+		gl_Position = uPMatrix * vPosition;
+		vTextureCoord = aTextureCoord;
+		vTransformedNormal = uNMatrix * aVertexNormal;
+	}
+</script>
+<script type="x-shader/x-fragment" id="fragmentshader">
+	varying vec2 vTextureCoord;
+
+	void main() {
+		gl_FragColor = vec4(1.0, 1.0, 1.0, 0.0);
+	}
+</script>
+<!-- End Shaders -->
+<script type="text/javascript" src="../src/webgl-fractals/fractals.js"></script>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Distance Field Raymarcher]]></title>
