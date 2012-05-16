@@ -6,17 +6,36 @@ double bailout = 32;
 color bg = color(0);
 int t = 0;
 
+color[] palette;
 int[] mandelbrot;
-color palette[];
+int[] ranks;
+float[] fractal;
+int N;
 
 void setup() {
   size(952, 392);
+  noLoop();
   set_bounds(-3.5, 2.1, -1.15);
-  colorMode(HSB);
-  palette = new color[256];
-  for (int i = 0; i < 256; i++) {
-    palette[i] = color(i, 255, 255);
-  }
+  
+  // build palette
+  palette = new color[1000];
+  /*
+  for (int i = 0; i < 250; i++)
+    palette[i] = lerpColor(color(255), color(0, 0, 255), float(i) / 250.0);
+  for (int i = 0; i < 250; i++)
+    palette[250+i] = lerpColor(color(0, 0, 255), color(0, 255, 0), float(i) / 250.0);
+  for (int i = 0; i < 250; i++)
+    palette[500+i] = lerpColor(color(0, 255, 0), color(0, 0, 255), float(i) / 250.0);
+  for (int i = 0; i < 250; i++)
+    palette[750+i] = lerpColor(color(0, 0, 255), color(255), float(i) / 250.0);
+    */
+  for (int i = 0; i < 500; i++)
+    palette[i] = lerpColor(color(0), color(0, 0, 255), float(i) / 500.0);
+  for (int i = 0; i < 450; i++)
+    palette[500+i] = lerpColor(color(0, 0, 255), color(0, 255, 255), float(i) / 450);
+  for (int i = 0; i < 50; i++)
+    palette[950+i] = lerpColor(color(0, 255, 255), color(255), float(i) / 50);
+
   mandelbrot = new int[width*height];
   recalc();
 }
@@ -24,16 +43,19 @@ void setup() {
 void draw() {
   background(bg);
   loadPixels();
+
   for (int i = 0; i < mandelbrot.length; i++) {
     if (mandelbrot[i] > 0)
-      pixels[i] = palette[(mandelbrot[i] + t) % 256];
+      pixels[i] = palette[int(fractal[mandelbrot[i]] * 1000)];
   }
+
   updatePixels();
   t++;
 }
 
 void recalc() {
   current_max = 1;
+  N = 0;
   for (int x=0; x < width; x++) {
     double c_real = min_real + x * real_factor;
     for (int y=0; y < height; y++) {
@@ -52,11 +74,27 @@ void recalc() {
         z_real = z_real2 - z_imag2 + c_real;
       }
       if (escaped) {
+        N++;
         mandelbrot[y*width+x] = i;
         if (i > current_max)
           current_max = i;
       }
     }
+  }
+  ranks = new int[N];
+  for (int i = 0; i < mandelbrot.length; i++)
+    if (mandelbrot[i] > 0)
+      ranks[i] = mandelbrot[i];
+  ranks = sort(ranks);
+  fractal = new float[current_max];
+  for (int i = 0; i < ranks.length; i++) {
+    int iters = ranks[i];
+    float u = float(i) / float(ranks.length);
+    fractal[iters] = u;
+
+    // skip ahead
+    while (i < ranks.length - 1 && ranks[i+1] == iters)
+      i++;
   }
 }
 
@@ -91,6 +129,7 @@ void mousePressed() {
     iterations = 50;
   }
   recalc();
+  redraw();
 }
 
 void keyPressed() {
@@ -98,5 +137,6 @@ void keyPressed() {
     iterations *= 2;
     bailout *= 2;
     recalc();
+    redraw();
   }
 }

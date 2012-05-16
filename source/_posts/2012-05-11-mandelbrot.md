@@ -12,9 +12,7 @@ image: /src/mandelbrot/mandelbrot.png
 ---
 ## Description
 
-A visualization of the Mandelbrot set written with processing.js. The color
-palette changes slowly over time to give an additional sense of the 
-complexity of the M-Set.
+A visualization of the Mandelbrot set written with processing.js. 
 
 Left mouse button zooms in; right mouse button zooms out; middle
 mouse button resets the zoom. Spacebar doubles iteration count (to increase detail).
