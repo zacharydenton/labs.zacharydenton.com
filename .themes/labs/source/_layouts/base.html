@@ -2,7 +2,7 @@
 {% include head.html %}
 <body {% if page.body_id %} id="{{ page.body_id }}" {% else %} id="main" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
   {% include navigation.html %}
-  {{ content | expand_urls: root_url }}
+  {{ content }}
   {% include footer.html %}
   {% include after_footer.html %}
 </body>

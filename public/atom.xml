@@ -4,7 +4,7 @@
   <title><![CDATA[labs.zd]]></title>
   <link href="http://labs.zacharydenton.com/atom.xml" rel="self"/>
   <link href="http://labs.zacharydenton.com/"/>
-  <updated>2012-05-15T22:43:39-04:00</updated>
+  <updated>2012-05-15T23:40:32-04:00</updated>
   <id>http://labs.zacharydenton.com/</id>
   <author>
     <name><![CDATA[Zach Denton]]></name>
@@ -87,6 +87,18 @@ The trails they make can be quite interesting.</p>
 
 <p>Left mouse button zooms in; right mouse button zooms out; middle
 mouse button resets the zoom. Spacebar doubles iteration count (to increase detail).</p>
+
+<h2>Images</h2>
+
+<p><img src="http://labs.zacharydenton.com/src/mandelbrot/mandelbrot.png"></p>
+
+<p><img src="http://labs.zacharydenton.com/src/mandelbrot/mandelbrot1.png"></p>
+
+<p><img src="http://labs.zacharydenton.com/src/mandelbrot/mandelbrot2.png"></p>
+
+<p><img src="http://labs.zacharydenton.com/src/mandelbrot/mandelbrot3.png"></p>
+
+<p><img src="http://labs.zacharydenton.com/src/mandelbrot/mandelbrot4.png"></p>
 
 <h2>Tools Used</h2>
 

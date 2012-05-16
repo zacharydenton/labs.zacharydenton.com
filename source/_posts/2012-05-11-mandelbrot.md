@@ -17,6 +17,17 @@ A visualization of the Mandelbrot set written with processing.js.
 Left mouse button zooms in; right mouse button zooms out; middle
 mouse button resets the zoom. Spacebar doubles iteration count (to increase detail).
 
+## Images
+
+{% img /src/mandelbrot/mandelbrot.png %}
+
+{% img /src/mandelbrot/mandelbrot1.png %}
+
+{% img /src/mandelbrot/mandelbrot2.png %}
+
+{% img /src/mandelbrot/mandelbrot3.png %}
+
+{% img /src/mandelbrot/mandelbrot4.png %}
 
 ## Tools Used
 
